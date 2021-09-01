@@ -18,14 +18,17 @@ module.exports = {
   //   // https://bundlers.tooling.report/code-splitting/multi-entry/
   //   runtimeChunk: 'single',
   // },
+  // entry: {
+  //   index: './src/index.js',
+  //   another: './src/another-module.js',
+  // },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all',
+  //   },
+  // },
   entry: {
-    index: './src/index.js',
-    another: './src/another-module.js',
-  },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
+    index: './src/dynamicImporting.js',
   },
   output: {
     filename: '[name].bundle.js',
