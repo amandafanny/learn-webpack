@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "env": "webpack --env goal=local --env production --progress -c ./env.config.js",
     "build": "webpack"
   },
   "keywords": [],
