@@ -14,6 +14,10 @@ module.exports = {
     clean: true,
   },
   optimization: {
+    // each module.id is incremented based on resolving order by default.
+    // Meaning when the order of resolving is changed,
+    // the IDs will be changed as well.
+    moduleIds: 'deterministic',
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
